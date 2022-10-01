@@ -3,7 +3,7 @@ import React from "react";
 import "./styles.css";
 
 import { toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.min.css";
+// import "react-toastify/dist/ReactToastify.min.css";
 
 function ProductCard({ product, setCurrentSale, currentSale }) {
  
