@@ -3,7 +3,9 @@ import { useEffect, useState } from "react";
 import Header from "./components/header";
 import ProductList from "./components/productList";
 import Cart from "./components/cart";
-import { render } from "react-dom";
+
+import {  ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.min.css";
 
 function App() {
   const [currentSale, setCurrentSale] = useState([]);
@@ -36,7 +38,7 @@ function App() {
             currentSale={currentSale}
           />
           <Cart setCurrentSale={setCurrentSale} currentSale={currentSale} />
-         
+          <ToastContainer />
         </main>
       </div>
     </div>
