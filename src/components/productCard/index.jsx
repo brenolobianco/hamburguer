@@ -11,7 +11,7 @@ function ProductCard({ product, setCurrentSale, currentSale }) {
     });
 
     if (itemRepetido) {
-      alert("item add")
+      alert("Item já adicionado")
     } else {
       setCurrentSale((previous) => [...previous, productItem]);
       console.log(currentSale);
