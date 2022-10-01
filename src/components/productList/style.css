@@ -1,0 +1,22 @@
+.product-list {
+  width: 1100px;
+  margin-top: 50px;
+}
+.product-list ul {
+  list-style: none;
+  display: flex;
+  height: auto;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+@media (max-width:480px) {
+  .product-list ul {
+    width: 620px;
+   flex-wrap: nowrap;
+    height: 391px;
+    overflow-y: hidden;
+    
+  }
+ 
+}
