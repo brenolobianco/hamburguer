@@ -5,7 +5,7 @@ import ProductList from "./components/productList";
 import Cart from "./components/cart";
 import { render } from "react-dom";
 import { toast, ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.min.css";
+// import "react-toastify/dist/ReactToastify.min.css";
 
 function App() {
   const [currentSale, setCurrentSale] = useState([]);
