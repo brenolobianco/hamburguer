@@ -1,11 +1,12 @@
 import React from "react";
-import { useState } from "react";
+
 import "./styles.css";
-import { render } from "react-dom";
-import { toast, ToastContainer } from "react-toastify";
+
+import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.min.css";
 
 function ProductCard({ product, setCurrentSale, currentSale }) {
+ 
   function handleClick(productItem) {
     const itemRepetido = currentSale.find((item) => {
       return item.id === productItem.id;
@@ -20,10 +21,14 @@ function ProductCard({ product, setCurrentSale, currentSale }) {
   }
 
   function deleteCard(productItem) {
-    console.log("clicou", productItem);
-    const filteredCard = currentSale.filter((card) => card !== productItem);
+    console.log("clicou")
+    const filteredCard = currentSale.filter((card) => {
+      return card.id !== productItem.id
+    
+    });
 
-    setCurrentSale(filteredCard);
+    console.log(filteredCard)
+
   }
 
   return (
