@@ -2,8 +2,7 @@ import React from "react";
 
 import "./styles.css";
 
-import { toast } from "react-toastify";
-// import "react-toastify/dist/ReactToastify.min.css";
+
 
 function ProductCard({ product, setCurrentSale, currentSale }) {
  
@@ -13,7 +12,7 @@ function ProductCard({ product, setCurrentSale, currentSale }) {
     });
 
     if (itemRepetido) {
-      toast.success("Item já adicionado");
+     alert("Item ja Adicionado")
     } else {
       setCurrentSale((previous) => [...previous, productItem]);
       console.log(currentSale);
