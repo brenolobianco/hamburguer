@@ -1,4 +1,3 @@
-
 import "./style.css";
 import Logo from "../../assets/logoheader.svg";
 import SearchInput from "../searchInput";

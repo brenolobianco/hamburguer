@@ -2,7 +2,7 @@
 import "./style.css";
 import ProductCard from "../productCard";
 
-function ProductList({ setCurrentSale, currentSale,products }) {
+function ProductList({ setCurrentSale, currentSale,products,handleClick,counter }) {
  
   return (
     <div className="product-list">
@@ -13,6 +13,9 @@ function ProductList({ setCurrentSale, currentSale,products }) {
             product={product}
             setCurrentSale={setCurrentSale}
             currentSale={currentSale}
+            handleClick={handleClick}
+            counter={counter}
+
           />
         ))}
       </ul>

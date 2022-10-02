@@ -19,6 +19,9 @@
   left: 506px;
   top: 104px;
 }
+.card span{
+ display: flex;
+}
 
 .card-description {
   width: 50%;
